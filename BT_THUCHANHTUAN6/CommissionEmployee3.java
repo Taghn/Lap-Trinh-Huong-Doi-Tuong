@@ -1,11 +1,11 @@
-public class CommissionEmployee extends Object{
+public class CommissionEmployee3 extends Object{
     private final String firstName;
     private final String lastName;
     private final String SecurityNumber;
     private double grossSales;
     private double commissionRate;
 
-    public CommissionEmployee(String firstName, String lastName, String SecurityNumber, double grossSales, double commissionRate){
+    public CommissionEmployee3(String firstName, String lastName, String SecurityNumber, double grossSales, double commissionRate){
         if(grossSales<0.0){
             throw new IllegalArgumentException("Ty le hoa hong > 0.0 va < 1.0");
         }
@@ -54,7 +54,7 @@ public class CommissionEmployee extends Object{
     @Override
     public String toString(){
         return String.format("%s:%s %s%n%s: %s%n%s: %.2f%n%s: %.2f", 
-        "commission employee", firstName, lastName,
+        "commission employee",firstName,lastName,
         "social security number",SecurityNumber,
         "gross sales",grossSales,
         "commission rate", commissionRate);

@@ -1,6 +1,7 @@
-public class HourlyEmployee extends Employee (
+public class HourlyEmployee extends Employee {
     private double wage;
     private double hours;
+
     public HourlyEmployee(String firstName, String lastName,String SecurityNumber, double wage, double hours){
         super(firstName,lastName,SecurityNumber);
         if(wage<0.0) {
@@ -46,4 +47,4 @@ public class HourlyEmployee extends Employee (
     public String toString(){
         return String.format("hourly employee: %s%n%s: $%,.2f; %s: %,.2f",super.toString(),"hourly wage",getWage(),"hours worked",getHours());
     }
-)
+}

@@ -1,8 +1,8 @@
-public class CommissionEmployee extends Employee{
+public class CommissionEmployee4 extends Employee{
     protected  double grossSales;
     protected  double commissionRate;
 
-    public CommissionEmployee(String firstName, String lastName, String SecurityNumber, double grossSales, double commissionRate){
+    public CommissionEmployee4(String firstName, String lastName, String SecurityNumber, double grossSales, double commissionRate){
         super(firstName,lastName,SecurityNumber); 
         if(grossSales<0.0){
             throw new IllegalArgumentException("Doanh so phai >= 0.0");
@@ -41,9 +41,10 @@ public class CommissionEmployee extends Employee{
 
     @Override
     public String toString(){
-        return String.format("%s:%s %s%n%s: $%,.2f; %s: %.2f", 
+        return String.format("%s: %s%n%s: $%,.2f; %s: %.2f", 
         "commission employee",super.toString(),
         "gross sales",getGrossSales(),
         "commission rate", getCommissionRate());
     }
+
 }

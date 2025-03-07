@@ -1,12 +1,15 @@
-public class CommissionEmployee extends Object{
+public class CommissionEmployee2 extends Object{
     private final String firstName;
     private final String lastName;
     private final String SecurityNumber;
     private double grossSales;
     private double commissionRate;
 
-    public CommissionEmployee(String firstName, String lastName, String SecurityNumber, double grossSales, double commissionRate){
+    public CommissionEmployee2(String firstName, String lastName, String SecurityNumber, double grossSales, double commissionRate){
         if(grossSales<0.0){
+            throw new IllegalArgumentException("Doanh so phai >=0.0");
+        }
+        if(commissionRate <= 0.0 || commissionRate >= 1.0){
             throw new IllegalArgumentException("Ty le hoa hong > 0.0 va < 1.0");
         }
         this.firstName=firstName;
@@ -48,7 +51,7 @@ public class CommissionEmployee extends Object{
         return commissionRate;
     }
     public double earnings(){
-        return commissionRate*grossSales;
+        return commissionRate * grossSales;
     }
 
     @Override

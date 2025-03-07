@@ -1,7 +1,7 @@
-public class BasePlusCommissionEmployee extends CommissionEmployee{
+public class BasePlusCommissionEmployee3 extends CommissionEmployee3{
     private double baseSalary;
 
-    public BasePlusCommissionEmployee(String firstName, String lastName, String socialSecurityNumber,double grossSales, double commissionRate, double baseSalary){
+    public BasePlusCommissionEmployee3(String firstName, String lastName, String socialSecurityNumber,double grossSales, double commissionRate, double baseSalary){
         super(firstName, lastName, socialSecurityNumber, grossSales, commissionRate);
         if(baseSalary< 0.0){
             throw new IllegalArgumentException("Luong cung phai >= 0.0");
@@ -17,6 +17,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee{
     public double getBaseSalary(){
         return baseSalary;
     }
+    
 
     @Override
 

@@ -1,6 +1,6 @@
 public class CommissionEmployeeTest {
    public static void main(String[] args) {
-       CommissionEmployee employee = new CommissionEmployee("Nguyen", "Huu Thang", "012-012-0125", 100000, .05);
+       CommissionEmployee2 employee = new CommissionEmployee2("Nguyen", "Huu Thang", "012-012-0125", 10000, .05);
        System.out.println("Thong tin nhan vien nhu sau: ");
        System.out.printf("%n%s %s%n", "Ho nhan vien: ",employee.getFirstName());
        System.out.printf("%n%s %s%n", "Ten nhan vien: ",employee.getLastName());

@@ -1,6 +1,6 @@
 public class BasePlusCommissionEmployeeTest {
     public static void main(String[] args) {
-        BasePlusCommissionEmployee employee = new BasePlusCommissionEmployee("Nguyen","Huu Thang","125-125-0125",5000, .04,300);
+        BasePlusCommissionEmployee3 employee = new BasePlusCommissionEmployee3("Nguyen","Huu Thang","125-125-0125",5000, .04,300);
         
         System.out.println("Thong tin nhan vien nhu sau: ");
        System.out.printf("%n%s %s%n", "Ho nhan vien: ",employee.getFirstName());
